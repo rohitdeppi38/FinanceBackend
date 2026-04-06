@@ -1,7 +1,7 @@
 import express from 'express'
-import { createTransaction ,updateTransaction,deleteTransaction,getTransaction } from '../controllers/transactionController'
-import { verifyToken } from '../middlewares/authMiddleware'
-import { allowRoles } from '../middlewares/roleMiddleware'
+import { createTransaction ,updateTransaction,deleteTransaction,getTransaction } from '../controllers/transactionController.js'
+import { verifyToken } from '../middlewares/authMiddleware.js'
+import { allowRoles } from '../middlewares/roleMiddleware.js'
 
 
 const router = express.Router();

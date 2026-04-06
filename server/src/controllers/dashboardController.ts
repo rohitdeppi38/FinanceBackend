@@ -1,6 +1,6 @@
 import {Response} from 'express'
-import Transaction from '../models/transaction';
-import { AuthRequest } from '../middlewares/authMiddleware';
+import Transaction from '../models/transaction.js';
+import { AuthRequest } from '../middlewares/authMiddleware.js';
 
 export const getSummary = async(req:AuthRequest,res:Response)=>{
     try {

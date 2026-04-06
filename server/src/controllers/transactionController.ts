@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import Transaction from "../models/transaction";
-import { AuthRequest } from "../middlewares/authMiddleware";
+import Transaction from "../models/transaction.js";
+import { AuthRequest } from "../middlewares/authMiddleware.js";
 
 //Create 
 export const createTransaction = async (req: AuthRequest, res: Response) => {

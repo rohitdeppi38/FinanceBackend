@@ -1,5 +1,5 @@
 import { NextFunction, Request,Response } from "express";
-import { AuthRequest } from "./authMiddleware";
+import { AuthRequest } from "./authMiddleware.js";
 
 export const allowRoles = (...roles:string[])=>{
     return (req:AuthRequest,res:Response,next:NextFunction)=>{
